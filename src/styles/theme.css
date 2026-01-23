@@ -1,0 +1,233 @@
+/* Skyddo Insurance Dashboard Theme - Inspired by brand colors */
+
+:root {
+  /* Warm, professional color palette matching Skyddo brand */
+  --background: #faf9f7;
+  --foreground: #2d1b24;
+  --card: #ffffff;
+  --card-foreground: #2d1b24;
+  --popover: #ffffff;
+  --popover-foreground: #2d1b24;
+
+  /* Primary: Skyddo burgundy/maroon */
+  --primary: #744253;
+  --primary-foreground: #ffffff;
+
+  /* Secondary: Warm neutral */
+  --secondary: #f4f1ed;
+  --secondary-foreground: #2d1b24;
+
+  /* Muted: Soft warm backgrounds */
+  --muted: #f8f6f3;
+  --muted-foreground: #6b5d66;
+
+  /* Accent: Lighter burgundy highlight */
+  --accent: #fdf6f9;
+  --accent-foreground: #5c3444;
+
+  /* Destructive: Softer red that fits the palette */
+  --destructive: #c4375a;
+  --destructive-foreground: #ffffff;
+
+  /* Borders and inputs: Warm subtle borders */
+  --border: #e8e2dd;
+  --input: #e8e2dd;
+  --ring: #744253;
+
+  /* Chart colors: Sophisticated, cohesive palette */
+  --chart-1: #744253; /* Burgundy */
+  --chart-2: #6b8e7f; /* Sage green */
+  --chart-3: #d4a574; /* Warm gold */
+  --chart-4: #9d7b8f; /* Mauve */
+  --chart-5: #c4375a; /* Rose */
+
+  /* Sidebar: Warm white with burgundy accents */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #2d1b24;
+  --sidebar-primary: #744253;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f8f6f3;
+  --sidebar-accent-foreground: #2d1b24;
+  --sidebar-border: #e8e2dd;
+  --sidebar-ring: #744253;
+
+  /* Typography */
+  --font-sans: Inter, ui-sans-serif, sans-serif, system-ui;
+  --font-serif: ui-serif, serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  /* Border radius: Modern, slightly rounded */
+  --radius: 0.5rem;
+
+  /* Shadows: Subtle and professional */
+  --shadow-x: 0;
+  --shadow-y: 1px;
+  --shadow-blur: 3px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.1;
+  --shadow-color: oklch(0 0 0);
+  --shadow-2xs: 0 1px 2px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.06);
+  --shadow-sm:
+    0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow:
+    0 2px 4px 0px hsl(0 0% 0% / 0.06), 0 1px 2px -1px hsl(0 0% 0% / 0.05);
+  --shadow-md:
+    0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 8px 10px -6px hsl(0 0% 0% / 0.1);
+  --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+/* Dark mode: Sophisticated and warm */
+.dark {
+  --background: #1a0f15;
+  --foreground: #f0e6ea;
+  --card: #2a1d24;
+  --card-foreground: #f0e6ea;
+  --popover: #2a1d24;
+  --popover-foreground: #f0e6ea;
+
+  /* Primary: Lighter burgundy for dark mode */
+  --primary: #a85c73;
+  --primary-foreground: #ffffff;
+
+  /* Secondary: Dark warm gray */
+  --secondary: #3d2d35;
+  --secondary-foreground: #f0e6ea;
+
+  /* Muted: Darker warm backgrounds */
+  --muted: #2a1d24;
+  --muted-foreground: #b8a5ac;
+
+  /* Accent: Dark burgundy highlight */
+  --accent: #4a2f3b;
+  --accent-foreground: #f5d9e3;
+
+  /* Destructive: Softer rose for dark mode */
+  --destructive: #cd5878;
+  --destructive-foreground: #ffffff;
+
+  /* Borders and inputs: Subtle warm contrast */
+  --border: #3d2d35;
+  --input: #3d2d35;
+  --ring: #a85c73;
+
+  /* Chart colors: Adjusted for dark mode visibility */
+  --chart-1: #a85c73; /* Burgundy */
+  --chart-2: #7fa89a; /* Sage green */
+  --chart-3: #dbb78e; /* Warm gold */
+  --chart-4: #b693a8; /* Mauve */
+  --chart-5: #e37091; /* Rose */
+
+  /* Sidebar: Deep burgundy-tinted dark */
+  --sidebar: #150a10;
+  --sidebar-foreground: #f0e6ea;
+  --sidebar-primary: #a85c73;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2a1d24;
+  --sidebar-accent-foreground: #f0e6ea;
+  --sidebar-border: #2a1d24;
+  --sidebar-ring: #a85c73;
+
+  /* Typography */
+  --font-sans: Inter, ui-sans-serif, sans-serif, system-ui;
+  --font-serif: ui-serif, serif;
+  --font-mono: ui-monospace, monospace;
+
+  /* Border radius */
+  --radius: 0.5rem;
+
+  /* Shadows: More prominent in dark mode */
+  --shadow-x: 0;
+  --shadow-y: 1px;
+  --shadow-blur: 3px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.2;
+  --shadow-color: oklch(0 0 0);
+  --shadow-2xs: 0 1px 2px 0px hsl(0 0% 0% / 0.3);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.4);
+  --shadow-sm:
+    0 1px 3px 0px hsl(0 0% 0% / 0.5), 0 1px 2px -1px hsl(0 0% 0% / 0.4);
+  --shadow: 0 2px 4px 0px hsl(0 0% 0% / 0.4), 0 1px 2px -1px hsl(0 0% 0% / 0.3);
+  --shadow-md:
+    0 4px 6px -1px hsl(0 0% 0% / 0.5), 0 2px 4px -2px hsl(0 0% 0% / 0.4);
+  --shadow-lg:
+    0 10px 15px -3px hsl(0 0% 0% / 0.6), 0 4px 6px -4px hsl(0 0% 0% / 0.5);
+  --shadow-xl:
+    0 20px 25px -5px hsl(0 0% 0% / 0.7), 0 8px 10px -6px hsl(0 0% 0% / 0.6);
+  --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.8);
+}
+
+/* Tailwind theme integration */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-sans);
+  --font-inter: var(--font-inter);
+  --font-manrope: var(--font-manrope);
+  --font-roboto: var(--font-roboto);
+  --font-open-sans: var(--font-open-sans);
+  --font-montseratt: var(--font-montserrat);
+  --font-nunito: var(--font-nunito);
+  --font-ubuntu: var(--font-ubuntu);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+}
