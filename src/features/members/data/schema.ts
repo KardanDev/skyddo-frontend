@@ -26,5 +26,7 @@ const memberSchema = z.object({
   updated_at: z.coerce.date(),
 })
 export type Member = z.infer<typeof memberSchema>
+export type User = Member
+export type UserStatus = MemberStatus
 
 export const memberListSchema = z.array(memberSchema)

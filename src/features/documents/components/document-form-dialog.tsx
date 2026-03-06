@@ -1,7 +1,7 @@
 // Document Form Dialog (Upload)
 import { useState } from 'react'
 import { Upload } from 'lucide-react'
-import { useCreateDocument } from '@/hooks/api/use-documents'
+import { useUploadDocument } from '@/hooks/api/use-documents'
 import { Button } from '@/components/ui/button'
 import {
   Dialog,
@@ -25,7 +25,7 @@ import { useDocuments } from './documents-provider'
 
 export function DocumentFormDialog() {
   const { open, setOpen, setCurrentRow } = useDocuments()
-  const createMutation = useCreateDocument()
+  const createMutation = useUploadDocument()
 
   const [documentableType, setDocumentableType] = useState('')
   const [documentableId, setDocumentableId] = useState('')

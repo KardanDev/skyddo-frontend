@@ -1,6 +1,6 @@
 // Invoice Row Actions
 import { type Invoice } from '@/types/invoice'
-import { type Row } from '@tantml:react-table'
+import { type Row } from '@tanstack/react-table'
 import { MoreHorizontal, Pen, Trash, Eye, CheckCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {

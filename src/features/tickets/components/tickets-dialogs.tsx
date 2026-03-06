@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 import {
   useDeleteTicket,
   useAssignTicket,
-  useAddTicketResponse,
+  useCreateTicketResponse,
 } from '@/hooks/api/use-tickets'
 import { Button } from '@/components/ui/button'
 import {
@@ -27,7 +27,7 @@ export function TicketsDialogs() {
   const { open, setOpen, currentRow, setCurrentRow } = useTickets()
   const deleteMutation = useDeleteTicket()
   const assignMutation = useAssignTicket()
-  const addResponseMutation = useAddTicketResponse()
+  const addResponseMutation = useCreateTicketResponse()
 
   const [assignedUserId, setAssignedUserId] = useState('')
   const [responseMessage, setResponseMessage] = useState('')
@@ -46,7 +46,7 @@ export function TicketsDialogs() {
   const handleAssign = () => {
     if (currentRow && assignedUserId) {
       assignMutation.mutate(
-        { id: currentRow.id, userId: Number(assignedUserId) },
+        { id: currentRow.id, assigned_to: Number(assignedUserId) },
         {
           onSuccess: () => {
             setOpen(null)
@@ -64,7 +64,7 @@ export function TicketsDialogs() {
   const handleAddResponse = () => {
     if (currentRow && responseMessage) {
       addResponseMutation.mutate(
-        { ticketId: currentRow.id, message: responseMessage },
+        { ticket_id: currentRow.id, message: responseMessage },
         {
           onSuccess: () => {
             setOpen(null)

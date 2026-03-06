@@ -2,7 +2,7 @@
 import { toast } from 'sonner'
 import {
   useDeleteInvoice,
-  useMarkInvoiceAsPaid,
+  useRecordPayment,
 } from '@/hooks/api/use-invoices'
 import { ConfirmDialog } from '@/components/confirm-dialog'
 import { InvoiceFormDialog } from './invoice-form-dialog'
@@ -12,7 +12,7 @@ import { useInvoices } from './invoices-provider'
 export function InvoicesDialogs() {
   const { open, setOpen, currentRow, setCurrentRow } = useInvoices()
   const deleteMutation = useDeleteInvoice()
-  const markPaidMutation = useMarkInvoiceAsPaid()
+  const markPaidMutation = useRecordPayment()
 
   const handleDelete = () => {
     if (currentRow) {
@@ -27,7 +27,7 @@ export function InvoicesDialogs() {
 
   const handleMarkPaid = () => {
     if (currentRow) {
-      markPaidMutation.mutate(currentRow.id, {
+      markPaidMutation.mutate({ id: currentRow.id }, {
         onSuccess: () => {
           setOpen(null)
           setTimeout(() => setCurrentRow(null), 300)
