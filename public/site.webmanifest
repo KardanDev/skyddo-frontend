@@ -1,0 +1,16 @@
+{
+  "name": "Skyddo",
+  "short_name": "Skyddo",
+  "description": "Skyddo insurance operations platform",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "type": "image/png"
+    }
+  ]
+}
