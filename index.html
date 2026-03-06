@@ -21,8 +21,16 @@
     <meta name="author" content="Skyddo" />
     <meta name="application-name" content="Skyddo" />
     <meta name="theme-color" content="#ffffff" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <link rel="canonical" href="https://app.skyddo.com/" />
+    <link rel="alternate" hreflang="en" href="https://app.skyddo.com/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -38,10 +46,17 @@
       property="og:image"
       content="https://app.skyddo.com/images/skyddo_logo.jpg"
     />
+    <meta
+      property="og:image:secure_url"
+      content="https://app.skyddo.com/images/skyddo_logo.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:alt" content="Skyddo platform preview" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@skyddo" />
+    <meta name="twitter:creator" content="@skyddo" />
     <meta name="twitter:url" content="https://app.skyddo.com/" />
     <meta name="twitter:title" content="Skyddo | Insurance Operations Platform" />
     <meta
@@ -65,12 +80,23 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
+        "@id": "https://app.skyddo.com/#software",
         "name": "Skyddo",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "url": "https://app.skyddo.com/",
         "image": "https://app.skyddo.com/images/skyddo_logo.jpg",
         "description": "Skyddo helps insurance teams manage clients, quotes, policies, claims, invoices, and support operations in one platform."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://app.skyddo.com/#organization",
+        "name": "Skyddo",
+        "url": "https://app.skyddo.com/",
+        "logo": "https://app.skyddo.com/images/skyddo_logo.jpg"
       }
     </script>
   </head>
