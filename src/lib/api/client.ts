@@ -10,7 +10,6 @@ const api: AxiosInstance = axios.create({
     'Content-Type': 'application/json',
     Accept: 'application/json',
   },
-  withCredentials: true,
 })
 
 // Request interceptor - Add auth token to requests
